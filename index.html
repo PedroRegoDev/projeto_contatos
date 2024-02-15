@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--definição idioma-->
+
+<head><!--providencia informações gerais (metadados) sobre o documento, título, links, scripts e estilos-->
+    <meta charset="UTF-8"> <!--conjunto de caracteres a ser utilizado na exibição do conteúdo de um site-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Compatível com dispositivos móveis-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--importando fonte do google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Agenda de Contatos</title> <!--Titulo da Página-->
+</head>
+
+<body> <!-- Corpo do site - conteudo visivel -->
+    <div class="container">
+        <header> <!--Cabeçalho da página-->
+            <img src="images/telefone2.png" alt="logo telefone"> <!--Adicionando imagem-->
+            <h1 id="titulo">Agenda de Contatos</h1> <!--Titulo do cabeçalho-->
+        </header>
+        <form id="form-contato"> <!--Formulário-->
+            <input type="text" id="nome-contato" required placeholder="nome" />
+            <!--Recebendo dados do usuário-->
+            <input type="text" id="numero-contato" required placeholder="telefone" />
+            <!--Recebendo dados usuário-->
+            <button type="submit">Cadastrar</button> <!--Executa a ação ao receber o clique do usuário -->
+        </form>
+        <table cellspacing="0"> <!--Tabela-->
+            <thead> <!--Cabeçalho da tabela-->
+                <tr> <!-- adicionando linha -->
+                    <th>Nome</th> <!--Nome das colunas-->
+                    <th>Telefone</th> <!--Nome das colunas-->
+                    <th>Situação</th> <!--Nome das colunas-->
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <footer> <!--Rodapé da pagina-->
+            <p>
+                &copy; Developed by: Pedro Rêgo
+            </p>
+        </footer>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
